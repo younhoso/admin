@@ -21,6 +21,7 @@ body {
   position: relative;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 a:link,
 a:visited {
@@ -315,9 +316,7 @@ canvas {
   background-color: #fbfbfb;
   color: #373737;
 }
-#header .profile ul > li:first-child {
-  padding: 10px;
-}
+
 #header .profile ul > li h5,
 #header .profile ul > li p {
   font-size: 0.813em;
@@ -822,7 +821,7 @@ canvas {
   margin-right: 240px;
 }
 .pageheader {
-  padding: 15px;
+  padding: 30px 15px;
   border-bottom: 1px solid #dce0e6;
   border-top: 1px solid #eee;
   background: #F6F8F8;
@@ -1158,13 +1157,14 @@ fieldset[disabled] .btn-default.active {
 a.btn-primary:link,
 a.btn-primary:visited {
   color: #fff;
-  background-color: #556b8d;
+  background-color: #0e7bce;
+    padding: 10px 30px;
 }
 a.btn-primary:hover,
 a.btn-primary:active {
   color: #ffffff;
-  background-color: #5f779d;
-  border-color: #5f779d;
+  background-color: #0e7bce;
+  border-color: #0e7bce;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1172,14 +1172,14 @@ a.btn-primary:active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #5f779d;
-  border-color: #5f779d;
+  background-color: #0e7bce;
+  border-color: #0e7bce;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  background: #556b8d;
-  border-color: #556b8d;
+  background: #0e7bce;
+  border-color: #0e7bce;
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -1616,11 +1616,6 @@ fieldset[disabled] .btn-warning.active {
 }
 .panel {
   border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
 }
 .panel > .panel-heading {
   font-weight: 400;
@@ -1658,7 +1653,6 @@ fieldset[disabled] .btn-warning.active {
   float: none;
 }
 .panel-default > .panel-heading {
-  border-color: #eff2f7;
   background: #fff;
   color: #767676;
 }
@@ -2576,7 +2570,7 @@ body.fullscreen-widget-active .panel .panel-heading .actions > .fa-times {
   border-radius: 2px;
   box-shadow: none;
   height: 37px;
-  padding: 8px 12px 9px 12px;
+  padding: 8px 12px 12px;
 }
 .form-control:focus {
   background: #fff;
@@ -2830,6 +2824,10 @@ label.valid {
 .rc-nav-wizard > .success > a > .badge {
   color: #ffffff;
   background-color: #27b6af;
+}
+.current {
+  color: #ffffff;
+  background-color: #0e7bce;
 }
 /* ==========================================================================
    Login, Sign Up, Loacked Screen
@@ -4337,3 +4335,149 @@ div.config h4 a:hover {
 .config-swatch-wrap .options .theme-style-wrapper:hover {
   cursor: pointer;
 }
+
+/*Admin_main start*/
+.card {
+    margin-top: 50px;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 8px 15px 0 0;
+}
+
+.card-body::after {
+  content: '';
+  display: inline-block;
+  clear: both;
+}
+.dataTables_wrapper .dataTables_length {
+  display: inline-block;
+}
+.dataTables_filter {
+  display: inline-block;
+  float: right;
+}
+
+div.dataTables_wrapper div.dataTables_info  {
+  float: left;
+  padding-top: 20px;
+}
+.paging_simple_numbers {
+  display: inline-block;
+  float: right;
+  padding-top: 20px;
+}
+.paging_simple_numbers .previous {
+  border-radius: 4px 0 0 4px;
+}
+.next{
+  border-radius: 0 4px 4px 0;
+}
+.paging_simple_numbers a {
+    border: 1px solid #dee2e6;
+    padding: 5px 15px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.table-responsive {
+  overflow-x: hidden;
+}
+.admin_authority_wrapp {
+  position: relative;
+}
+
+.icon_right {
+  cursor: pointer;
+  position: absolute;
+  top: -16px;
+  right: 0;
+}
+
+.admin_authority_inner {
+  position: absolute;
+  top: 10px;
+  right: 100%;
+  float: right;
+  z-index: 9999;
+  display: none;
+}
+
+.admin_authority {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.icon_right .admin_authority_inner.active {
+  width: 110px;
+  display: block;
+  background-color: #fff;
+}
+/*Admin_main end*/
+/*Admin_movie_registration starte*/
+
+.wrap_inner {
+    width: 50%;
+    margin: 0 auto;
+}
+.form-group {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+.title p {
+    color: #999;
+}
+.rating {
+    width: 100%;
+    height: 35px;
+}
+.btn-primary {
+    margin-top: 30px;
+}
+
+/*Admin_movie_registration end*/
+/*Admin_change.jsp start*/
+.btn_change {
+    
+}
+.btn_change ul{
+    list-style: none;
+    text-align: center;
+}
+.btn_change li {
+    display: inline-block;
+}
+.btn_change li a {
+    display: inline-block;
+    padding: 10px 60px;
+    background-color: #0e7bce;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 1px #cbcbcb;
+}
+.btn_change li:last-child a{
+    background-color: transparent;
+    color: #333;
+    margin-left: 20px;
+}
+/*Admin_change.jsp end*/
+/*Admin_movie_theater_registration.jsp 시작*/
+.map_wrapp {
+    width: 50%;
+    margin: 0 auto;
+}
+.form-group.inner {
+    margin-bottom: 30px;
+}
+.form-group.inner_top {
+    margin-top: 30px;
+}
+.top {
+    margin-top: 40px;
+}
+/*Admin_movie_theater_registration.jsp 끝*/

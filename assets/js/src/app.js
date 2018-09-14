@@ -237,23 +237,23 @@ var app = function() {
 
 
 
-        window.onload = function() {
-            var ctx1 = document.getElementById("canvas1").getContext("2d");
-            window.myLine = new Chart(ctx1).Line(lineChartData, {
-                responsive: true
-            });
+        // window.onload = function() {
+        //     var ctx1 = document.getElementById("canvas1").getContext("2d");
+        //     window.myLine = new Chart(ctx1).Line(lineChartData, {
+        //         responsive: true
+        //     });
 
-            var ctx2 = document.getElementById("canvas2").getContext("2d");
-            window.myBar = new Chart(ctx2).Bar(barChartData, {
-                responsive: true
-            });
+        //     var ctx2 = document.getElementById("canvas2").getContext("2d");
+        //     window.myBar = new Chart(ctx2).Bar(barChartData, {
+        //         responsive: true
+        //     });
 
-            var ctx3 = document.getElementById("doughnut-chart-area").getContext("2d");
-            window.myDoughnut = new Chart(ctx3).Doughnut(doughnutData, {
-                responsive: true
-            });
+        //     var ctx3 = document.getElementById("doughnut-chart-area").getContext("2d");
+        //     window.myDoughnut = new Chart(ctx3).Doughnut(doughnutData, {
+        //         responsive: true
+        //     });
 
-        };
+        // };
 
     };
 
@@ -434,3 +434,4 @@ $(window).resize(function() {
     app.chartJs();
 
 });
+
